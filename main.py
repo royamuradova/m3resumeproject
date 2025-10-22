@@ -1,12 +1,9 @@
-import part1_tests
+# This update was made in the random-numbers branch
+# Added a simple example of random target generation
+import random
 
-# Call the test function directly so it actually runs and prints output
-part1_tests.run_small_tests()
-
-import part2_random_tests
-part2_random_tests.main()
-
-
-import part3_timing_experiments
-part3_timing_experiments.run_experiment()
+example_array = sorted(random.sample(range(1, 100), 10))
+example_target = random.choice(example_array)
+print("Example array:", example_array)
+print("Random target for testing:", example_target)
 
