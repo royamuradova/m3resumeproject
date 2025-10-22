@@ -1,9 +1,7 @@
-# This update was made in the random-numbers branch
-# Added a simple example of random target generation
-import random
+# Rate of growth observation
+# Comparing how average time increases as N grows
+print("\n=== Rate of Growth Observation ===")
+print("As N increases, sequential search grows approximately linearly (O(n)),")
+print("while binary search grows logarithmically (O(log n)).")
 
-example_array = sorted(random.sample(range(1, 100), 10))
-example_target = random.choice(example_array)
-print("Example array:", example_array)
-print("Random target for testing:", example_target)
 
